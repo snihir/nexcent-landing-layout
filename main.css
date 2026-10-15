@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+
+    background-color: #4CAF4F;
+    color: #ffffff;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: #4D4D4D;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.nav__list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__link{
+    display: block;
+    padding: 0.5em 1em;
+
+    color: #4D4D4D
+}
+
+/* hero */
+.hero {
+    padding: 66px 100px;
+    background-color: #F5F7FA;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    max-width: 450px;
+}
+
+.hero__content h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #4D4D4D;
+    line-height: 1.2;
+}
+
+.hero__content span {
+    color: #4CAF4F;
+}
+
+/* clients */
+
+.clients__container {
+    text-align: center;
+}
+
+.clients__list {
+    width: 100%;
+    padding: 24px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style-type: none;
+}
