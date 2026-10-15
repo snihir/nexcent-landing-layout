@@ -168,3 +168,32 @@ a {
 .community__card img {
     margin-bottom: 1.5rem;
 }
+
+/* Story */
+
+.story {
+    padding: 3.6rem 0;
+}
+
+.story__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story__content {
+    max-width: 460px;
+}
+
+.story__title {
+    color: #4D4D4D;
+    font-size: 2em;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.story__content p {
+    color: #717171;
+    margin-bottom: 1rem;
+}
