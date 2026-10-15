@@ -81,7 +81,7 @@ a {
     line-height: 1.2;
 }
 
-.hero__content span {
+span {
     color: #4CAF4F;
 }
 
@@ -196,4 +196,53 @@ a {
 .story__content p {
     color: #717171;
     margin-bottom: 1rem;
+}
+
+
+/* Statistics */
+
+.statistics {
+    padding: 4rem 0;
+    background-color: #F5F7FA;
+}
+
+.statistics__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3.6rem 0;
+}
+
+.statistics__title {
+    color: #4D4D4D;
+    font-size: 2em;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.statistics__description {
+    color: #717171;
+    margin-bottom: 2rem;
+}
+
+.statistics__data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.statistics__item {
+    display: flex;
+    align-items: center;
+    width: 160px;
+}
+
+.statistics__item p {
+    color: #717171
+}
+
+.statistics__item img {
+    margin-right: 1rem;
 }
