@@ -23,7 +23,7 @@ a {
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.5em 5px;
     border-radius: 3px;
     white-space: nowrap;
 
@@ -49,6 +49,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .header__logo {
@@ -62,16 +64,21 @@ body {
     font-size: 2em;
     font-weight: 600;
 }
+nav {
+    flex-grow: 1;
+}
 
 .nav__list{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
     list-style-type: none;
 }
 
 .nav__link{
     display: block;
-    padding: 0.5em 1em;
 
     color: #4D4D4D
 }
@@ -86,14 +93,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
+
 
 .hero__content {
     max-width: 450px;
 }
 
 .hero__title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 600;
     color: #4D4D4D;
     line-height: 1.2;
@@ -106,6 +115,10 @@ span {
 .hero__content p {
     color: #717171;
     margin: 1em 0;
+}
+
+.hero img {
+    max-width: 40%;
 }
 
 
@@ -169,19 +182,21 @@ span {
 .community__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
     width: 100%;
 }
 
 .community__card {
     flex: 1;
+    max-width: 30%;
     padding: 1rem 1.6rem;
 
     font-size: 1rem;
 }
 
 .community__card h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
@@ -199,6 +214,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .story__content {
@@ -207,7 +223,7 @@ span {
 
 .story__title {
     color: #4D4D4D;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
 
     margin-bottom: 1rem;
@@ -216,6 +232,10 @@ span {
 .story__content p {
     color: #717171;
     margin-bottom: 1rem;
+}
+
+.story__container img {
+    max-width: 100%;
 }
 
 
@@ -228,6 +248,7 @@ span {
 
 .statistics__container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -278,6 +299,7 @@ span {
 .footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-brand {
@@ -343,117 +365,4 @@ span {
 
     max-width: 255px;
     height: 35px;
-}
-
-@media screen and (max-width: 800px) {
-
-    body {
-        font-size: 1.4rem;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 16px;
-    }
-
-    /* Header */
-    .header__container {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .nav__list {
-        gap: 8px;
-    }
-
-    /* Hero */
-    .hero {
-        padding: 40px 0;
-    }
-
-    .hero__container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .hero__content {
-        max-width: 100%;
-    }
-
-    .hero__title {
-        font-size: 2.8rem;
-    }
-
-    .hero img {
-        width: 80%;
-        max-width: 350px;
-    }
-
-    /* Clients */
-    .clients__list {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    /* Community */
-    .community__list {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .community__card {
-        padding: 0;
-        width: 100%;
-    }
-
-    /* Story */
-    .story__container {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .story__content {
-        max-width: 100%;
-    }
-
-    /* Statistics */
-    .statistics__container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .statistics__data {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: 100%;
-    }
-
-    .statistics__item {
-        width: auto;
-    }
-
-    /* Footer */
-    .footer__container {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .footer-nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        width: 100%;
-    }
-
-    .nav__column {
-        width: auto;
-        flex: 1 1 140px;
-        min-width: 0;
-    }
-
-    .nav__column input {
-        max-width: 100%;
-    }
 }
