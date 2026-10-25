@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -159,9 +160,37 @@ header .burger-menu {
 .hero p {
     color: #717171;
     margin-bottom: 40px;
+    min-width: 40%;
 }
 
 .hero img {
     margin: 0 auto;
+}
+
+.clients {
+    text-align: center;
+    padding-block: 27px;
+}
+
+.clients h2 {
+    margin-bottom: 20px;
+}
+
+.clients p {
+    color: #717171;
+    margin-bottom: 27px;
+}
+
+.clients ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-block: 17px;
+}
+
+.clients li {
+    flex-grow: 1;
 }
 
