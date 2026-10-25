@@ -100,7 +100,7 @@ header button {
         position: absolute;
         right: 0;
         top: 0;
-        transform: translateX(calc(100% - 40px));
+        transform: translateX(calc(100% - 30px));
         transition: transform 0.3s ease-in-out;
         
         
@@ -108,8 +108,11 @@ header button {
 
      header nav ul {
         display: block;
-        margin-top: 10px;
+        padding-top: 5px;
+        margin-top: 0;
         padding-left: 10px;
+        padding-bottom: 10px;
+        background-color: #fff;
      }
 
      header nav li {
