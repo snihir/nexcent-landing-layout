@@ -9,14 +9,19 @@
     <title>Nexcent</title>
 </head>
 <body>
-    <header>
+    <header> 
         <div class="container">
             <a href="/" class="logo">
                 <img src="img/logo.svg" alt="Nexcent">
                 Nexcent
             </a>
-            <nav>
-                <ul>
+
+            <nav id="nav">
+                <button class="burger-menu" id="burger-menu">
+                    ☰
+                </button>
+
+                <ul id="burger-list">
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Features</a></li>
                     <li><a href="/">Community</a></li>
@@ -25,7 +30,18 @@
                     <li><a href="/">Register Now</a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
+
+    <section class="hero">
+        <h1>Lessons and insights from 8 years</h1>
+    </section>
+
+    <script>
+        document.getElementById("burger-menu").addEventListener('click', () => {
+            document.getElementById("nav").classList.toggle("show");
+        })
+    </script>
 </body>
 </html>

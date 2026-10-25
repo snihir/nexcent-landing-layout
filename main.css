@@ -25,12 +25,15 @@ body {
 
 header {
     padding: 5px 0;
+    position: relative;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 
 .logo {
@@ -54,6 +57,7 @@ header ul {
     gap: 10px;
 
     list-style: none;
+
 }
 
 header li:not(:last-child) {
@@ -72,5 +76,67 @@ header li:last-child a {
 
     padding: 9px 20px;
     border-radius: 3px;
+}
+
+
+header button {
+    width: 30px;
+    height: 30px;
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+    
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+     nav {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(calc(100% - 40px));
+        transition: transform 0.3s ease-in-out;
+        
+        
+     }
+
+     header nav ul {
+        display: block;
+        margin-top: 10px;
+        padding-left: 10px;
+     }
+
+     header nav li {
+        margin-bottom: 10px;
+     }
+
+     .show {
+        transform: translateX(0);
+    
+     }
+
+     header button {
+        display: block;
+     }
+
+
+}
+
+
+
+.hero {
+    background-color: #F5F7FA;
+    padding: 66px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
 }
 
